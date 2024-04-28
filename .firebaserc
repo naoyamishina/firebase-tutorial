@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "fir-tutorial-naoya",
+    "dev": "fir-tutorial-naoya"
+  },
+  "targets": {},
+  "etags": {}
+}
