@@ -2,18 +2,21 @@
 module.exports = {
   root: true,
   env: {
-    browser:true,
+    browser: true,
     es2021: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'google',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: ['.eslintrc.{js,cjs}'],
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,7 +24,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import'],
   rules: {
-    'import/no-unresolved': 'off',
     'import/order': [
       'error',
       {
@@ -30,5 +32,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
   },
 };

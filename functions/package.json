@@ -1,15 +1,15 @@
 {
   "name": "functions",
   "scripts": {
-    "lint": "eslint --ext .js,.ts .",
+    "lint": "eslint --ext .js,.ts ./src",
     "lint:fix": "eslint --fix --ext .js,.ts ./src",
-    "format": "prettier --write .",
-    "build": "tsc",
+    "format": "prettier --write ./src",
+    "build": "rm -rf lib && tsc",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
+    "deploy": "firebase deploy --only functions --project default",
     "logs": "firebase functions:log"
   },
   "engines": {
