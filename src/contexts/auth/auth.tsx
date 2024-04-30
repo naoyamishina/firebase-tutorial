@@ -24,11 +24,11 @@ export type WithAuthProps = {
 };
 
 export const withAuth = (WrappedComponent: FC<WithAuthProps>) => {
-  const WithAuth = ({ children }: { children?: ReactNode }) => {
+  const WithAuth = ({ children }: { children?: ReactNode }) => (
     <AuthProvider>
       <WrappedComponent>{children}</WrappedComponent>
-    </AuthProvider>;
-  };
+    </AuthProvider>
+  );
 
   return WithAuth;
 };
