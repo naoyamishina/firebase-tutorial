@@ -6,10 +6,7 @@ import type { ReactNode } from 'react';
 
 export const Layout = withAuth(({ children }: { children: ReactNode }) => {
   return (
-    <ResponsiveLayout
-      header={{ title: <Title /> }}
-      navbar={{ navMenu: 'ナビメニュー', accountMenu: <AccountMenu/> }}
-    >
+    <ResponsiveLayout header={{ title: <Title /> }} navbar={{ navMenu: 'ナビメニュー', accountMenu: <AccountMenu /> }}>
       {children}
     </ResponsiveLayout>
   );
