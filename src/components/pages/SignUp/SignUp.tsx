@@ -1,5 +1,5 @@
 import { Stack } from '@mantine/core';
-import { SignUpForm } from '@/components/forms/auth/SignUpForm'; 
+import { SignUpForm } from '@/components/forms/auth/SignUpForm';
 
 export const SignUp = () => {
   return (

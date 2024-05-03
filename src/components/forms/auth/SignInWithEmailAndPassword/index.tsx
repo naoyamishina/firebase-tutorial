@@ -1,1 +1,1 @@
-export * from './SignInWithEmailAndPassword'
+export * from './SignInWithEmailAndPassword';

@@ -1,1 +1,1 @@
-export * from './NotFoundScreen'
+export * from './NotFoundScreen';

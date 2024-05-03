@@ -1,1 +1,1 @@
-export * from './PasswordConfirmationInput'
+export * from './PasswordConfirmationInput';

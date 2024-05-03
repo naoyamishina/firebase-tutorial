@@ -1,1 +1,1 @@
-export * from './InternalServerErrorScreen'
+export * from './InternalServerErrorScreen';

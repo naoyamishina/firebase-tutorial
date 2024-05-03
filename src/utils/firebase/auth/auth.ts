@@ -17,10 +17,4 @@ const signInWithEmailAndPassword = async (email: string, password: string) =>
 const signOut = async () => _signOut(getAuth());
 
 export type { User, ParsedToken };
-export {
-  createUserWithEmailAndPassword,
-  getAuth,
-  getIdTokenResult,
-  signInWithEmailAndPassword,
-  signOut
-};
+export { createUserWithEmailAndPassword, getAuth, getIdTokenResult, signInWithEmailAndPassword, signOut };

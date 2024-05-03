@@ -1,1 +1,1 @@
-export * from './LoadingOverlayButton'
+export * from './LoadingOverlayButton';

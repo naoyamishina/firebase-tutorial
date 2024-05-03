@@ -1,1 +1,1 @@
-export * from './UnstyledConfirmBotton'
+export * from './UnstyledConfirmBotton';
