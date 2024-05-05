@@ -10,10 +10,6 @@
       {
         "source": "/users/",
         "destination": "users.html"
-      },
-      {
-        "source": "/users/:userId",
-        "destination": "/users/[userId].html"
       }
     ],
     "cleanUrls": true
