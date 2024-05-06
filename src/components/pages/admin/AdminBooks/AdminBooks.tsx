@@ -1,5 +1,6 @@
 import { Box, Stack, Title, Group, Table, ActionIcon, LoadingOverlay } from '@mantine/core';
 import { IconSquareRoundedPlus } from '@tabler/icons-react';
+import { UnstyledModalButton } from '@/components/elements/ModalButton';
 import { useBookCollection, booksQuery } from '@/models/book';
 import { Book } from './_components/Book';
 
@@ -15,7 +16,12 @@ export const AdminBooks = () => {
         </Title>
         <Group justify='flex-end'>
           <ActionIcon.Group>
-            <ActionIcon variant='white'>
+            <ActionIcon
+              variant='white'
+              component={UnstyledModalButton}
+              modalContent={() => '作成フォーム'}
+              modalProps={{ title: '書籍' }}
+            >
               <IconSquareRoundedPlus />
             </ActionIcon>
           </ActionIcon.Group>
