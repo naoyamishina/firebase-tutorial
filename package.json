@@ -14,7 +14,8 @@
     "update:shared": "rm -rf .next && yarn build:shared && yarn update:shared:hosting && yarn update:shared:functions",
     "build:shared": "cd functions/packages/shared && yarn build",
     "update:shared:hosting": "yarn add file:functions/packages/shared",
-    "update:shared:functions": "cd functions && yarn add file:packages/shared"
+    "update:shared:functions": "cd functions && yarn add file:packages/shared",
+    "ts-node": "env-cmd -f .env.default ts-node"
   },
   "dependencies": {
     "@local/shared": "file:functions/packages/shared",
@@ -38,17 +39,20 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
+    "commander": "^12.0.0",
     "env-cmd": "^10.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-tailwindcss": "^3.15.1",
+    "firebase-admin": "^12.1.0",
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "^1.15.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
