@@ -24,6 +24,7 @@
     "@mantine/hooks": "^7.8.1",
     "@mantine/modals": "^7.9.0",
     "@mantine/notifications": "^7.8.1",
+    "@tabler/icons-react": "^3.3.0",
     "autoprefixer": "^10.4.19",
     "firebase": "^10.11.1",
     "next": "14.2.3",
@@ -55,6 +56,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5",
     "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "yesno": "^0.4.0"
   }
 }
