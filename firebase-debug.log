@@ -1,0 +1,14 @@
+[debug] [2024-05-06T03:42:12.403Z] ----------------------------------------------------------------------
+[debug] [2024-05-06T03:42:12.404Z] Command:       /Users/naoyamishina/.nodenv/versions/20.7.0/bin/node /Users/naoyamishina/.yarn/bin/firebase deploy --project default
+[debug] [2024-05-06T03:42:12.404Z] CLI Version:   13.7.5
+[debug] [2024-05-06T03:42:12.404Z] Platform:      darwin
+[debug] [2024-05-06T03:42:12.405Z] Node Version:  v20.7.0
+[debug] [2024-05-06T03:42:12.405Z] Time:          Mon May 06 2024 12:42:12 GMT+0900 (日本標準時)
+[debug] [2024-05-06T03:42:12.405Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-06T03:42:12.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-06T03:42:12.441Z] > authorizing via signed-in user (msnyxx811@gmail.com)
+[debug] [2024-05-06T03:42:12.441Z] [iam] checking project fir-tutorial-naoya for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-05-06T03:42:12.442Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-tutorial-naoya:testIamPermissions [none]
+[debug] [2024-05-06T03:42:12.442Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-tutorial-naoya:testIamPermissions x-goog-quota-user=projects/fir-tutorial-naoya
+[debug] [2024-05-06T03:42:12.442Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-tutorial-naoya:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
