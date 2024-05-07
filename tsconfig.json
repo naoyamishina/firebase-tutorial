@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,6 +17,16 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", ".eslintrc.js", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "next.config.js",
+    "plopfile.mjs",
+    "postcss.config.js",
+    ".eslintrc.js",
+    ".prettierrc.js",
+    ".stylelintrc.js",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "exclude": ["node_modules", "functions"]
 }
